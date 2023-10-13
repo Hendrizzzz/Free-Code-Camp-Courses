@@ -1,0 +1,154 @@
+html{
+    box-sizing:border-box;
+}
+
+html,
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.side-content {
+    position: fixed;
+    width: 330px; /* Adjust the width as needed */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds the height */
+    max-height: 100%; /* Limit the maximum height to make it scrollable within the viewport */
+    position: fixed; /* Keeps the content fixed when scrolling */
+    margin: 40px -100px 0 -60px ;
+    border-right: 2px solid rgb(160, 150, 150);
+}
+
+.hidden{
+    display: none;
+}
+
+.nav {
+    padding: 0;
+    margin-left: 0;
+}
+
+
+.title-link{
+    text-decoration: none;
+    color: rgb(160, 150, 150);
+    margin: 0;
+}
+
+#navhead{
+    position: fixed;
+    top: -10px;
+    left: 30px
+}
+
+.topics{
+    list-style-type: none;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+
+.topics li{
+    margin: 20px 0 20px 20px;
+    padding-left: 20px;
+}
+
+.topics li:first-of-type{
+    border-top: 1.5px solid #9fa0a5;
+    padding-top: 20px;
+}
+
+.topics li:last-of-type{
+    border-bottom: none;
+}
+
+
+.border-bottom{
+    margin: 30px 0;
+    border-bottom: 1px solid rgb(160, 150, 150);
+}
+
+.nav h1{
+    text-align: center;
+}
+
+main{
+    margin-left: 300px;
+}
+
+.paragraph, .paragraph-list, .description-border {
+    margin: 20px;
+}
+
+.description-border{
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    margin-left: 30px;
+}
+
+.description-border .paragraph-border, .description-border ul{
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    border-radius: 5px;
+    font-family: 'Terminus', sans-serif;
+    font-size: smaller;
+    font-family: 'CommitMono-Regular';   
+    margin: 2px;                                    
+}
+
+
+li {
+    padding: 5px;
+    font-size: 0.9em;
+}
+
+
+.padding-list{
+    margin: -10px
+}
+
+
+p{
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 750px){
+    body{
+        margin: 0;
+    }
+
+    main{
+        margin: 9px 0 90px 30px;
+
+    }
+
+    .side-content{
+        display: block;
+        margin-top: -30px;
+        margin-right: 50px;
+        height: 250px;
+        width: 100%;
+        position: relative;
+    }
+    #navhead{
+        display: none;
+    }
+
+    .hidden{
+        display: block;
+        text-align: center;
+    }
+}
